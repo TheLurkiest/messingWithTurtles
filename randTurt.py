@@ -24,9 +24,23 @@ class RandT1(object):
         o = turtle.Turtle()
         wn = turtle.Screen()
 
+        wn.bgcolor("blue")        # set the window background color
+
+
+
         jimmy.shape('turtle')
-        jimmy.color("red")
-        jimmy.pensize(5)
+
+        randomColor = random.randint(1,99)
+        if(randomColor < 25):
+            jimmy.color("lightgreen")
+        if(randomColor < 50):
+            jimmy.color("hotpink")
+        if(randomColor < 75):
+            jimmy.color("orange")
+        else:
+            jimmy.color("red")
+
+        jimmy.pensize(3)
         jimmy.forward(2)
 
 
