@@ -16,6 +16,10 @@ y = ob1.turtlesetup()
 func = ob1.turtlesetup()
 
 # ...followed by something like this:
-# ob1.moveturtle( func[0], func[1] )
+ob1.moveturtle( func[0], func[1] )
+
 # ...and boom!  The turtle moves!!! yay!
+
+
+
 
