@@ -51,11 +51,16 @@ class MeTurt(object):
 		return(wn,jimmy)
 
 
-	def moveturtle(self,wn,jimmy):
-		#while isInScreen(wn, jimmy):
-		angle = random.randrange(1, 361)
-		jimmy.right(angle)
-		jimmy.forward(50)
+	def turtPmove(self,wn,jimmy, p_move_pick, p_pick_left_right, p_rot_pick):
+		#angle = random.randrange(1, 361)
+		if( p_pick_left_right[0].lower() == 'l'):
+			jimmy.left(p_rot_pick)
+		else:
+			jimmy.right(p_rot_pick)
+
+		angle = p_rot_pick
+		# jimmy.right(angle)
+		jimmy.forward(int(p_move_pick))
 
 	def turtFuncUturn(self, jimmy):
 		"""
